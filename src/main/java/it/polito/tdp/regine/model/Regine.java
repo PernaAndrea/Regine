@@ -38,7 +38,7 @@ public class Regine {
 	private boolean cerca(List<Integer>parziale, int livello) { // [0, 6, 4, 7]
 		if(livello==N) {
 			// caso terminale
-			System.out.println(parziale);
+			//System.out.println(parziale);
 			this.soluzione = new ArrayList<Integer>(parziale);
 			return true;
 		} else {
@@ -48,9 +48,9 @@ public class Regine {
 				if(posValida(parziale,colonna)) {
 					
 					parziale.add(colonna); // [0, 6, 4, 7, XXX]
-					boolean trovato = cerca(parziale,livello+1);
+					boolean trovato = cerca(parziale,livello+1); // attraverso il booleann trovato appena trovo una sol mi fermo
 					if(trovato) {
-						return true;
+						return true;//cosi appena ho una soluzione mi fermo
 					}
 					parziale.remove(parziale.size()-1); //backtracking
 				}
