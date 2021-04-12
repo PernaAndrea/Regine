@@ -82,6 +82,20 @@ public class Regine {
 		return true;
 	}
 	
+	//COMPLEXITYYY--------------------------------
+	/*
+	 * PROVO A SCRIVERE LA COMPLESSITà DEL MIO ALGORITMO
+	 * 
+	 * T(n) =
+	 * 		- O(n) caso terminale
+	 * 		- O(1) + (n)T(n-1)       <-- termine dominante
+	 * 
+	 * 	allora :
+	 * 				T(n) = 1 + n * T(n-1)
+	 * 		che svolgendolo su Wolframalpha viene una funzione gamma  che significa che è una complessita totale di n! ( n fattoriale )
+	 * 
+	 * 
+	 */
 	
 	
 }
